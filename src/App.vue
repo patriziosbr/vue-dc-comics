@@ -1,7 +1,16 @@
 <template>
   <div id="app">
     
-    <Header/>
+    <Header />
+
+    <div class="containerFullBlack">
+      <Contents />
+    </div>  
+
+    <div class="containerFullBlue">
+      <Bonus />
+    </div>
+
 
   </div>
 </template>
@@ -9,11 +18,16 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
+import Contents from './components/Contents.vue'
+import Bonus from './components/Bonus.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Contents,
+    Bonus
   }
 }
 </script>
@@ -26,6 +40,13 @@ export default {
   }
   body {
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .containerFullBlack {
+    background-color: black;
+  }
+  .containerFullBlue {
+    background-color: #0C7CEC;
   }
   
 

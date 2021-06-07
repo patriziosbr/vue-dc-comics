@@ -4,7 +4,8 @@
         
         <ul>
             <li v-for="(link, index) in links" :key="index">
-                <a :class=" { active : isActive === true} " :href="link.ref"> {{ link.navName }}</a>
+                <a :class="{'active': link.isActive}" :href="link.ref"> {{ link.navName }}</a>
+                <div :style="[ link.isActive == true ? {'display' : 'block'} : {'display' : 'none'} ]" class="blueBar"></div>
             </li>
         </ul>
 
@@ -82,31 +83,36 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid black;
     }
     img {
         height: 80%;
     }
-
+    ul {
+        display: flex;
+    }
     li {
-        display: inline;
         list-style: none;
+        padding: 32px 8px;
+        position: relative;
 
         a {
             text-transform: uppercase;
             text-decoration: none;
             font-weight: 700;
             font-size: 14px;
-            padding: 32px 8px;
-            border: 1px solid rgb(3, 105, 194);
             color: black;
         }
     }
-
-    ul li a:active {
-        
-        color: red;
-        
+    ul li a.active {
+        color: #0C7CEC;
+    }
+    .blueBar {
+        height: 5px;
+        width: 100%;
+        background-color: #0C7CEC;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
 
