@@ -39,8 +39,9 @@ export default {
            width: 100%;
        }
        p {
-           text-align: center;
-           
+           text-transform: uppercase;
+           font-size: 13px;
+           padding-top: 8px;
        }
    }
 
