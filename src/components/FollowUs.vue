@@ -1,43 +1,48 @@
 <template>
-  <section>
-      
-    <button> 
-        <p>sign-up now!</p>
-    </button>
 
-     <div>
-        <h4>follow us</h4>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="../assets/img/footer-facebook.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="../assets/img/footer-twitter.png" alt="">
-                </a>
-            </li>
-             <li>
-                <a href="#">
-                    <img src="../assets/img/footer-youtube.png" alt="">
-                </a>
-            </li>
-             <li>
-                <a href="#">
-                    <img src="../assets/img/footer-pinterest.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="../assets/img/footer-periscope.png" alt="">
-                </a>
-            </li>
-        </ul>
+    <div class="containerFollowUs">   
+        <section>
+            
+            <button> 
+                <p>sign-up now!</p>
+            </button>
+
+            <div>
+                <h4>follow us</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-twitter.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-youtube.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-pinterest.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/footer-periscope.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        
+        </section>
     </div>
 
-   
-  </section>
+
 </template>
 
 <script>
@@ -49,7 +54,7 @@ export default {
 <style lang="scss" scoped>
     section {
         height: 100px;
-        max-width: 1170px;
+        width: 1170px;
         margin: 0 auto;
         display: flex;
         align-items: center;

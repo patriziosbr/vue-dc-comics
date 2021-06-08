@@ -2,22 +2,17 @@
   <div id="app">
     
     <Header />
+    
+    <Jumbotron />
 
-    <div class="containerFullBlack">
-      <Contents />
-    </div>  
+    <Contents />
+     
+    <Bonus />
+    
+    <Footer />
+ 
 
-    <div class="containerFullBlue">
-      <Bonus />
-    </div>
-
-    <div class="containerFooter">
-      <Footer />
-    </div>
-
-    <div class="containerFollowUs">
-      <FollowUs />
-    </div>
+    <FollowUs />
   </div>
 
 </template>
@@ -29,12 +24,14 @@ import Contents from './components/Contents.vue'
 import Bonus from './components/Bonus.vue'
 import Footer from './components/Footer.vue'
 import FollowUs from './components/FollowUs.vue'
+import Jumbotron from './components/Jumbotron.vue'
 
 
 export default {
   name: 'App',
   components: {
     Header,
+    Jumbotron,
     Contents,
     Bonus,
     Footer,
@@ -53,17 +50,8 @@ export default {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .containerFullBlack {
-    background-color: black;
-  }
-  .containerFullBlue {
-    background-color: #0C7CEC;
-  }
-  .containerFooter {
-    background-image: url(./assets/img/dc-logo-bg.png), url(./assets/img/footer-bg.jpg);
-    background-position: center right, center bottom;
-    background-repeat: no-repeat;
-  }
+
+
   .containerFollowUs {
     background-color: #303030;
   }

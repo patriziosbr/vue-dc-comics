@@ -1,5 +1,7 @@
 <template>
-  <footer>
+
+    <div class="containerFooter">
+         <footer>
       <div>
           <section>
         <h3>Dc Comics</h3>
@@ -100,6 +102,9 @@
     
 
   </footer>
+</div>
+
+ 
 </template>
 
 <script>
@@ -109,10 +114,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .containerFooter {
+        width: 100%;
+        background-image: url(../assets/img/footer-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     footer {
-        max-width: 1170px;
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-position: center right;
+        background-repeat: no-repeat;
+        width: 1170px;
         margin: 0 auto;
-        
         color: #fff;
     }
 
@@ -148,5 +162,6 @@ export default {
     .marginLftRgt {
         margin: 32px 32px;
     }
+    
 
 </style>

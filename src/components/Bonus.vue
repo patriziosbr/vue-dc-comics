@@ -1,13 +1,16 @@
 <template>
-  <section>
-      <ul>
-          <li v-for="(icon, index) in icons" :key="index">
-              <img :src=" require('../assets/img/' + icon.imgName )" alt="" >
-              <p> {{ icon.text }}</p>
-          </li>
-      </ul>
+    <div class="containerFullBlue">
+        <section>
+            <ul>
+                <li v-for="(icon, index) in icons" :key="index">
+                    <img :src=" require('../assets/img/' + icon.imgName )" alt="" >
+                    <p> {{ icon.text }}</p>
+                </li>
+            </ul>
 
-  </section>
+        </section>
+    </div>
+  
 </template>
 
 <script>
@@ -44,8 +47,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .containerFullBlue {
+        background-color: #0C7CEC;
+    }
     section {
-        max-width: 1170px;
+        width: 1170px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
