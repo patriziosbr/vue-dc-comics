@@ -3,12 +3,15 @@
     <div class="containerFullBlack">
         <section class="conatinerWidth">
 
-            <div class="containerFlex">
-                
-                <Comics v-for="(comic, index) in comics" :key="index" :comic='comic.series' :src="comics.thumb"/>
-
+            <div class="products-title">
+                <h4>current series</h4>
             </div>
 
+            <div class="containerFlex">
+                <Comics v-for="(comic, index) in comics" :key="index" :pippo='comic' />
+            </div>
+
+            <button> load more </button>
         </section>
     </div>
 
@@ -17,10 +20,8 @@
 <script>
 import Comics from './Comics.vue'
 
-
-
 export default {
-  components: { Comics },
+    components: { Comics },
     name: "Contents",
     data() {
         return {
@@ -108,20 +109,51 @@ export default {
 
     .containerFullBlack {
     background-color: black;
+    
   }
 
     .conatinerWidth {
         
         width: 1170px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
 
-        .containerFlex{
+        .containerFlex {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             padding: 24px;
+            
         } 
-       
+        button {
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: #0282F9;
+            border: none;
+            margin: 48px 0;
+        }
+        .products-title {
+            height: 60px;
+            width: 200px;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            background-color: #0282F9;
+            text-align: center;
+            line-height: 60px;
+            position: absolute;
+            top: -30px;
+            left: 0;
+        }
+
     }
     h1 {
         color: #fff;

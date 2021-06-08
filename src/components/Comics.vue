@@ -1,19 +1,19 @@
 <template>
+
     <section>
          <div id='account-info'>
-            {{ comic }}
+           <img :src="pippo.thumb" alt="">
+           <p> {{ pippo.series }} </p>
         </div>
     </section>
+
 </template>
 
 <script>
 
-
-
-
 export default {
     props: [
-        'comic'
+        'pippo'
     ]
     
 }
@@ -33,6 +33,15 @@ export default {
        height: 200px;
        background-color: aquamarine;
        color: #fff;
+       margin: 16px 0;
+
+       img {
+           width: 100%;
+       }
+       p {
+           text-align: center;
+           
+       }
    }
 
 </style>
